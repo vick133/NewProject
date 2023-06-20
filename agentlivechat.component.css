@@ -1,0 +1,18 @@
+.boticon{
+    height:50px;
+    width:50px;
+    margin-top: 600px;
+    float:right;
+    cursor:default;
+    display: inline;
+}
+.chatbox{
+    display:inline-block;
+    margin-top:150px;
+    margin-left: 800px;
+    height:500px;
+    width:400px;
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 5px;
+}

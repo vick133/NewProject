@@ -1,0 +1,24 @@
+<div *ngIf="userlogin && submitted">
+    <button style="margin-left: 1210px;" (click)="logout()">Logout</button>
+    <app-livechat></app-livechat>
+</div>
+<div class="div1" *ngIf="!submitted && (!userlogin || !agentlogin)">
+    <p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Login</p>
+    <form class="loginform" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <p>
+            <label for="username">Username   </label>
+            <input type="text" id="username" formControlName="username">
+        </p>
+        <p>
+            <label for="password">Password   </label>
+            <input type="password" id="password" formControlName="password">
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+</div>
+<div *ngIf="agentlogin && submitted">
+    <button style="margin-left: 1210px;" (click)="logout()">Logout</button>
+    <app-agentlivechat></app-agentlivechat>
+</div>

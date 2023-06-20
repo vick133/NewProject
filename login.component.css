@@ -1,0 +1,15 @@
+.div1{
+    display: block;
+    height: 300px;
+    width: 400px;
+    background-color:burlywood;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 140px;
+    margin-left: 450px;
+    border-radius: 40px;
+}
+.loginform{
+    padding-top: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

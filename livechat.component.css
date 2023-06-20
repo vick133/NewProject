@@ -1,0 +1,69 @@
+.boticon{
+    height:50px;
+    width:50px;
+    margin-top: 600px;
+    float:right;
+    cursor:default;
+    display: inline;
+}
+.chatbox{
+    display:inline-block;
+    margin-top:150px;
+    margin-left: 800px;
+    height:500px;
+    width:400px;
+    text-align: center;
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+.chatscreen{
+    display: block;
+    margin-top: 80px;
+    height:300px;
+    width:400px;
+    text-align: center;
+    background-color: antiquewhite;
+    overflow: auto;
+    position: absolute;
+}
+.row1{ 
+    display: inline-block;
+    margin-top: 370px;
+    margin-left: 3px;
+}
+.row2{
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.livechat{
+    margin-left: 0px;
+    margin-top: 17px;
+    background-color: greenyellow;
+    height: 45px;
+    width:85px;
+}
+.endlivechat{
+    margin-top: 25px;
+    background-color:rgb(247, 13, 60);
+    height: 45px;
+    width:85px;
+}
+.box{
+    margin-top: 320px;
+    width: 300px;
+    float: left;
+    margin-left: 12px;
+}
+.buttons{
+    position: sticky;
+}
+
+/* .row1{
+    border-radius: 30px;
+    margin-top: 130px;
+    background-color: white;
+}
+.row2{
+    border-radius: 30px;
+    background-color: white;
+} */

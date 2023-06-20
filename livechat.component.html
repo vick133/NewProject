@@ -1,0 +1,37 @@
+<div class="image-container"><img class="boticon" src="assets/robot.png" (click)="showbot()"></div>
+<div *ngIf="!showbotbox">
+    
+</div>
+<div *ngIf="!livechatbool && showbotbox" class="chatbox" >
+    <img src="assets/usericon.png" style="height:20px; width:20px; margin-top: 50px; margin-left: 9px; float: left;">
+    <p style="display:inline; margin-top:50px; float:left; margin-left:8px; background-color: white;">Hello welcome!</p>
+    <div class="chatscreen" *ngIf="clickedevent">
+        <img src="assets/usericon.png" style="height:20px; width:20px; margin-top: 10px; margin-right: 9px; float: right;"><p style="float:right; margin-right: 10px; margin-top:9px; animation-duration: 20s; background-color: white;">{{botmsg}}</p>
+        <img src="assets/usericon.png" style="height:20px; width:20px; margin-top: 60px; margin-left: 9px; float: left;"><p style="margin-top:59px; float:left; margin-left:10px; background-color: white;">{{replymsg}}</p>
+    </div> 
+    <div class="buttons">
+    <button class="row1" value="Hi" (click)="touchevent($event)">Hi</button>
+    <button class="row1" value="Good morning" (click)="touchevent($event)">Good morning</button>
+    <button class="row1" value="Have a query" (click)="touchevent($event)">Have a query</button>
+    <button class="row2" value="Thanks" (click)="touchevent($event)">Thanks</button>
+    <button class="row2" value="Bye" (click)="touchevent($event)">Bye</button>
+    <button class="row2" value="Have a great day" (click)="touchevent($event)">Have a great day</button><br>
+    <button class="livechat" (click)="livechatclick()">Live Chat</button>
+    </div>
+</div>
+<div *ngIf="livechatbool" class="chatbox" >
+    <p style="margin-top:40px;">{{livechatmsg}}</p>
+    <div class="textbox">
+        <input class="box" type="text" placeholder="Enter your query"><button style="display:inline; margin-top: 319px;">Send</button>
+    </div>
+    <button class="endlivechat" (click)="endchat()">End chat</button>
+</div>
+
+<!--<button class="row1">Hi</button>
+    <button class="row1">Good morning</button>
+    <button class="row1">Have a query</button>
+    <button class="row2">Thanks</button>
+    <button class="row2">Bye</button>
+    <button class="row2">Have a great day</button>
+
+-->
